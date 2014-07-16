@@ -1,0 +1,8 @@
+# file: roles/leiningen/tasks/main.yml
+
+- name: Leiningen | Install lein in /usr/bin
+  get_url: dest=/usr/local/bin/lein url="https://raw.github.com/technomancy/leiningen/stable/bin/lein"
+
+- name: Leiningen | Make lein executable
+  file: path=/usr/local/bin/lein mode=755
+

@@ -1,0 +1,6 @@
+---
+- name: Create a directory under /srv for kixi
+  file: path=/srv/kixi state=directory mode=755
+
+- name: Git checkout from Github
+  git: repo=https://github.com/mastodonC/kixi.hecuba.git dest=/srv/kixi/kixi.hecuba

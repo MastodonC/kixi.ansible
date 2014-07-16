@@ -1,0 +1,6 @@
+# --- nginx
+nginx_install_method: "package"
+
+# --- monit configuration
+monit_protection: false
+

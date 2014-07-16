@@ -1,0 +1,4 @@
+# file: roles/emacs/tasks/main.yml
+
+- name: Emacs | install emacs with no X
+  apt: pkg=emacs23-nox
